@@ -1,4 +1,4 @@
-# rest-api-c6
+# Course
 Homework for Building RESTful API Golang Batch 6
 
 ## Package
