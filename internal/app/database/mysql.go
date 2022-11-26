@@ -5,9 +5,9 @@ import (
 	"gorm.io/gorm"
 )
 
-// Function to connect golang to d=mysql database
+// Function to connect golang to online mysql server at freesqldatabase.com
 func NewConnDatabase() *gorm.DB {
-	dsn := "root:root@tcp(127.0.0.1:3306)/course?charset=utf8mb4&parseTime=True&loc=Local"
+	dsn := "sql6580832:zwTxNEJj5r@tcp(sql6.freesqldatabase.com:3306)/sql6580832?charset=utf8mb4&parseTime=True&loc=Local"
 	db, err := gorm.Open(mysql.Open(dsn), &gorm.Config{})
 	if err != nil {
 		panic(err)
