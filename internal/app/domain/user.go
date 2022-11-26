@@ -17,7 +17,7 @@ type User struct {
 	Name      string    `json:"name"`
 	Email     string    `json:"email"`
 	Password  string    `json:"password"`
-	NoHp      string    `json:"no_hp"`
+	NoHP      string    `json:"no_hp"`
 	CreatedAt time.Time `json:"created_at"`
 	UpdatedAt time.Time `json:"updated_at"`
 }
@@ -27,7 +27,7 @@ type UserRegister struct {
 	Name     string `json:"name"`
 	Email    string `json:"email"`
 	Password string `json:"password"`
-	NoHp     string `json:"no_hp"`
+	NoHP     string `json:"no_hp"`
 }
 
 // Function to check input of new user and hash password
@@ -57,7 +57,7 @@ func NewUser(email, name, password, hp string) (*User, error) {
 		Name:     name,
 		Email:    email,
 		Password: string(hash),
-		NoHp:     hp,
+		NoHP:     hp,
 	}, nil
 }
 
