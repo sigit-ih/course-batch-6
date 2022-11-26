@@ -1,5 +1,5 @@
 # Course
-Homework for Building RESTful API Golang Batch 6
+Homework for Building RESTful API & Deployment with Docker Golang Batch 6
 
 ## Package
 - Database
