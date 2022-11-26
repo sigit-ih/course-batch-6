@@ -29,7 +29,7 @@ func (uh UserHandler) Register(c *gin.Context) {
 		})
 	}
 
-	user, err := domain.NewUser(userRegister.Email, userRegister.Name, userRegister.Password, userRegister.NoHp)
+	user, err := domain.NewUser(userRegister.Email, userRegister.Name, userRegister.Password, userRegister.NoHP)
 	if err != nil {
 		c.JSON(http.StatusBadRequest, map[string]string{
 			"message": err.Error(),
